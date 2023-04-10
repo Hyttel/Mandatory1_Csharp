@@ -1,0 +1,15 @@
+C:\Users\Mikkel\RiderProjects\Mandatory\Mandatory\bin\Debug\net6.0\Mandatory.exe
+C:\Users\Mikkel\RiderProjects\Mandatory\Mandatory\bin\Debug\net6.0\Mandatory.deps.json
+C:\Users\Mikkel\RiderProjects\Mandatory\Mandatory\bin\Debug\net6.0\Mandatory.runtimeconfig.json
+C:\Users\Mikkel\RiderProjects\Mandatory\Mandatory\bin\Debug\net6.0\Mandatory.dll
+C:\Users\Mikkel\RiderProjects\Mandatory\Mandatory\bin\Debug\net6.0\Mandatory.pdb
+C:\Users\Mikkel\RiderProjects\Mandatory\Mandatory\obj\Debug\net6.0\Mandatory.csproj.AssemblyReference.cache
+C:\Users\Mikkel\RiderProjects\Mandatory\Mandatory\obj\Debug\net6.0\Mandatory.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mikkel\RiderProjects\Mandatory\Mandatory\obj\Debug\net6.0\Mandatory.AssemblyInfoInputs.cache
+C:\Users\Mikkel\RiderProjects\Mandatory\Mandatory\obj\Debug\net6.0\Mandatory.AssemblyInfo.cs
+C:\Users\Mikkel\RiderProjects\Mandatory\Mandatory\obj\Debug\net6.0\Mandatory.csproj.CoreCompileInputs.cache
+C:\Users\Mikkel\RiderProjects\Mandatory\Mandatory\obj\Debug\net6.0\Mandatory.dll
+C:\Users\Mikkel\RiderProjects\Mandatory\Mandatory\obj\Debug\net6.0\refint\Mandatory.dll
+C:\Users\Mikkel\RiderProjects\Mandatory\Mandatory\obj\Debug\net6.0\Mandatory.pdb
+C:\Users\Mikkel\RiderProjects\Mandatory\Mandatory\obj\Debug\net6.0\Mandatory.genruntimeconfig.cache
+C:\Users\Mikkel\RiderProjects\Mandatory\Mandatory\obj\Debug\net6.0\ref\Mandatory.dll
