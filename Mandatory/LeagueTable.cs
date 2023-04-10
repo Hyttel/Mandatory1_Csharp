@@ -77,19 +77,31 @@ public enum Result
 
 public class Team
 {
+    
     public string Abbreviation { get; set; }
     public string Name { get; set; }
     public string SpecialRanking { get; set; }
-    public int GamesPlayed { get; private set; }
-    public int GamesWon { get; private set; }
-    public int GamesDrawn { get; private set; }
-    public int GamesLost { get; private set; }
-    public int GoalsFor { get; private set; }
-    public int GoalsAgainst { get; private set; }
-    public int GoalDifference => GoalsFor - GoalsAgainst;
-    public int Points => GamesWon * 3 + GamesDrawn;
-    public List<Result> CurrentStreak { get; private set; }
+    public int GamesPlayed { get; set; }
+    public int Wins { get; set; }
+    public int Draws { get; set; }
+    public int Losses { get; set; }
+    public int GoalsFor { get; set; }
+    public int GoalsAgainst { get; set; }
+    public int GoalDifference
+    {
+        get => GoalsFor - GoalsAgainst;
+        set => throw new NotImplementedException();
+    }
+
+    public int Points
+    {
+        get => Wins * 3 + Draws;
+        set => throw new NotImplementedException();
+    }
+
+    public List<Result> CurrentStreak { get; set; }
     public List<string> LatestResults { get; set; }
+    public int Position { get; set; }
 
     public string GetWinningStreakString()
     {
@@ -202,7 +214,7 @@ public class Team
                 Console.WriteLine("{0,-4}{1,-6}{2,-30}{3,-4}{4,-4}{5,-4}{6,-4}{7,-4}{8,-4}{9,-4}{10,-6}",
                     positionString,
                     specialRankingString,
-                    team.FullName,
+                    team.Name,
                     team.GamesPlayed,
                     team.Wins,
                     team.Draws,
@@ -221,9 +233,9 @@ public class Team
         Name = name;
         SpecialRanking = specialRanking;
         GamesPlayed = 0;
-        GamesWon = 0;
-        GamesDrawn = 0;
-        GamesLost = 0;
+        Wins = 0;
+        Draws = 0;
+        Losses = 0;
         GoalsFor = 0;
         GoalsAgainst = 0;
         CurrentStreak = new List<Result>();
@@ -243,17 +255,17 @@ public class Team
 
         if (goalsFor > goalsAgainst)
         {
-            GamesWon++;
+            Wins++;
             CurrentStreak.Add(Result.Win);
         }
         else if (goalsFor == goalsAgainst)
         {
-            GamesDrawn++;
+            Draws++;
             CurrentStreak.Add(Result.Draw);
         }
         else
         {
-            GamesLost++;
+            Losses++;
             CurrentStreak.Add(Result.Loss);
         }
     }
